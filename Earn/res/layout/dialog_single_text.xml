@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_border"
+    android:orientation="vertical"
+    tools:context="com.jk.earn.MainActivity" >
+
+    <TextView
+        android:id="@+id/dialog_single_text_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dialog_single_text_padding"
+        android:textColor="@color/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_single_text_btn_confire"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:background="@drawable/shape_border"
+            android:text="@string/dialog_single_text_confire"
+            android:textColor="@color/back" />
+
+        <Button
+            android:id="@+id/dialog_single_text_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:background="@drawable/shape_border"
+            android:text="@string/dialog_single_text_cancel"
+            android:textColor="@color/back" />
+    </LinearLayout>
+
+</LinearLayout>

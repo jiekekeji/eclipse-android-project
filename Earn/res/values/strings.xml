@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手闲赚</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- text -->
+    <string name="phone_product_adapter_carworth">元</string>
+    <string name="phone_product_adapter_point">积分</string>
+    <string name="fr_phone_num">手机号归属地不详</string>
+    <string name="phone_product_name">话费充值</string>
+    <string name="fr_user_welcome">你好</string>
+    <string name="fr_login_forget_passwd">忘记密码</string>
+    <string name="ac_dialog_find_pwd_title">找回密码</string>
+    <string name="adpater_qq_product_point">需积分:</string>
+
+    <!-- dialog -->
+    <string name="dialog_single_text_confire">确认</string>
+    <string name="dialog_single_text_cancel">取消</string>
+    <string name="dialog_phone_fr_sync_product">同步面额中...</string>
+    <string name="dialog_qq_fr_sync_product">同步QQ商品中...</string>
+    <string name="dialog_qq_ac_good_info_recharge">积分兑换中...</string>
+    <string name="dialog_login_fr_login">登录中...</string>
+    <string name="dialog_register_fr">注册中...</string>
+    <string name="dialog_fr_phone_query_phone_num">查询手机号信息中...</string>
+    <string name="dialog_phone_ac_good_info_recharge">积分兑换中...</string>
+    <string name="dialog_modify_pwd">正在修改密码，请稍等......</string>
+    <string name="dialog_fr_wz_load_dialog">正在加载任务.......</string>
+
+    <!-- title -->
+    <string name="title_fr_qq">QQ商品兑换商城</string>
+    <string name="title_fr_phone">话费兑换商城</string>
+    <string name="title_fr_wz">任务中心</string>
+    <string name="title_fr_user">个人中心</string>
+    <string name="title_fr_ac_good_info">商品详情</string>
+    <string name="title_fr_ac_phone_info">商品详情</string>
+    <string name="title_ac_user_register">注册</string>
+    <string name="title_ac_user_login">登录</string>
+    <string name="title_ac_web_view">帮助中心</string>
+    <string name="fr_user_login_now">立即登录</string>
+    <string name="fr_user_logout_now">注销登录</string>
+    <string name="fr_user_refresh_user_info">正在刷新用户信息，请稍等......</string>
+    <string name="fr_user_cancel_login">登录注销中，请稍等......</string>
+    <string name="title_ac_point_history_recharge">消费记录</string>
+    <string name="title_ac_point_history_earn">赚取记录</string>
+    <string name="title_fr_phone_refresh_cardWorth">刷新面额</string>
+
+    <!-- pulltorefresh -->
+    <string name="btn_scroll_view">ScrollView demo</string>
+    <string name="btn_list_view">ListView demo</string>
+    <string name="header_hint_refresh_normal">Pull to refresh</string>
+    <string name="header_hint_refresh_ready">Release to refresh</string>
+    <string name="header_hint_refresh_loading">Refreshing&#8230;</string>
+    <string name="header_hint_refresh_time">Time：</string>
+    <string name="footer_hint_load_normal">Load more</string>
+    <string name="footer_hint_load_ready">Release to load more</string>
+
+    <!-- toast -->
+    <string name="sync_qq_product_error">QQ产品同步失败</string>
+    <string name="toast_input_info_error">账号或充值数量输入有误</string>
+    <string name="toast_user_login">请先登录</string>
+    <string name="toast_user_no_login">未登录</string>
+    <string name="toast_submit_rechare_error">执行兑换请求出错，请稍后重试</string>
+    <string name="toast_submit_rechare_ok">兑换请求已添加处理，请在1-10分钟后查询是否到账</string>
+    <string name="toast_submit_rechare_point_un_enough">积分不足,做点任务吧</string>
+    <string name="toast_submit_rechare_point_exception">兑换请求处理失败，请稍后重新提交</string>
+    <string name="toast_user_name_enpty">用户名输入不符合规则</string>
+    <string name="toast_user_name_exit">用户名已存在</string>
+    <string name="toast_user_email_error">邮箱输入有误</string>
+    <string name="toast_user_pwd_error">密码输入不符合规则</string>
+    <string name="toast_user_info_error">注册信息输入有误</string>
+    <string name="toast_user_register_error">注册失败</string>
+    <string name="toast_user_register_ok">注册成功</string>
+    <string name="toast_user_login_name_or_pwd_error">用户名或密码为空</string>
+    <string name="toast_user_login_ok">登陆成功</string>
+    <string name="toast_user_login_error">登陆失败</string>
+    <string name="toast_user_login_name_password_error">用户名或密码错误</string>
+    <string name="toast_phone_fr_sync_product_error">同步面额失败</string>
+    <string name="toast_phone_fr_phone_num_error">手机号码输入有误</string>
+    <string name="toat_user_fr_logout_error">注销失败</string>
+    <string name="toat_user_fr_logout_ok">注销成功</string>
+    <string name="toast_pwd_modify_scucces">密码修改成功</string>
+    <string name="toast_pwd_modify_error">密码修改失败</string>
+    <string name="toast_ac_dialog_find_pwd_scucces">新密码已发送至邮箱</string>
+    <string name="toast_ac_dialog_find_pwd_fail">找回密码失败</string>
+    <string name="toast_ac_dialog_find_pwd_name_error">用户名或邮箱不正确</string>
+    <string name="toast_ac_dialog_find_pwd_email_error">邮箱不正确</string>
+    <string name="toast_ac_main_exit_app">再按一次退出程序</string>
+    <string name="toast_fr_user_check_qq_install">请先安装QQ客户端</string>
+    <string name="toast_fr_wz_load_ad_error">加载任务失败</string>
+    <string name="toast_fr_wz_load_ad_turn_off">亲，暂时没任务哈</string>
+
+    <!-- hint -->
+    <string name="hint_user_name">请输入用户名3-10个字符</string>
+    <string name="hint_user_email">请输入邮箱</string>
+    <string name="hint_user_pwd">请输入密码6-16个字符</string>
+    <string name="hint_user_pwd_confire">请确认密码</string>
+    <string name="hint_account_input">请输入充值账号</string>
+    <string name="hint_buyNum_input">请输入兑换数量</string>
+    <string name="hint_qq_fr_empty_text">点我刷新试试</string>
+    <string name="hint_ac_find_pwd_user_email">请输入注册时的邮箱</string>
+    <string name="hint_ac_find_pwd_user_name">请输入注册时的用户名</string>
+    <string name="hint_fr_phone_phone_num_input">请输入11位手机号</string>
+
+    <!-- ad text -->
+    <string name="ad_vidio_complete">播放完成，退出后重新进入播放下一个</string>
+    <string name="ad_vidio_play_fail">播放失败</string>
+    <string name="ad_vidio_exit">视频未播放完成，无法获得积分</string>
+
+</resources>

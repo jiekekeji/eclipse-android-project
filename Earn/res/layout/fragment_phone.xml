@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_view_fr_phone" />
+
+    <com.jk.earn.scrollview.widget.StretchScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/fr_phone_number_input_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_top"
+                android:background="@drawable/shape_border"
+                android:inputType="number"
+                android:maxLength="11"
+                android:padding="@dimen/fr_phone_phone_num_et_padding"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/fr_phone_number_info_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin"
+                android:gravity="center_vertical"
+                android:padding="@dimen/base_padding" />
+
+            <com.jk.earn.view.NoSrocGridView
+                android:id="@+id/fr_phone_product_gv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/base_margin"
+                android:layout_weight="100"
+                android:background="#f4f4f4"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:paddingLeft="2dp"
+                android:verticalSpacing="8dp" >
+            </com.jk.earn.view.NoSrocGridView>
+        </LinearLayout>
+    </com.jk.earn.scrollview.widget.StretchScrollView>
+
+</LinearLayout>

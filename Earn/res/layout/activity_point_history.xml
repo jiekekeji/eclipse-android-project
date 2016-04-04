@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.wh.traffic.MainActivity" >
+
+    <include layout="@layout/title_view_ac_point_history" />
+
+    <!-- 内容栏 -->
+
+    <FrameLayout
+        android:id="@+id/ac_point_history_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="100" >
+    </FrameLayout>
+
+</LinearLayout>

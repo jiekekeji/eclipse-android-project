@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/base_margin"
+    android:background="@drawable/shape_border"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/adapter_exchange_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="center_vertical"
+            android:padding="@dimen/base_padding"
+            android:singleLine="true"
+            android:text="1元话费充值" />
+
+        <TextView
+            android:id="@+id/adapter_exchange_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/base_padding"
+            android:singleLine="true"
+            android:text="兑换成功" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/adapter_exchange_account_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="center_vertical"
+            android:padding="@dimen/base_padding"
+            android:singleLine="true"
+            android:text="账号:811066178" />
+
+        <TextView
+            android:id="@+id/adapter_exchange_order_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/base_padding"
+            android:singleLine="true"
+            android:text="积分:-10000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/adapter_exchange_order_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border"
+        android:gravity="center_vertical|right"
+        android:padding="@dimen/base_padding"
+        android:singleLine="true"
+        android:text="2015-10-31 11:11" />
+
+</LinearLayout>

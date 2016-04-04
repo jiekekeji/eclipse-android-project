@@ -1,0 +1,65 @@
+<com.jk.earn.scrollview.widget.StretchScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context="com.jk.earn.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/fr_login_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/fr_login_account_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border"
+                android:hint="请输入用户名"
+                android:inputType="text"
+                android:padding="@dimen/base_padding"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/fr_login_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_top"
+                android:background="@drawable/shape_border"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:padding="@dimen/base_padding"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/fr_login_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/shape_border"
+                android:padding="@dimen/base_padding"
+                android:text="登录" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fr_login_forget_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fr_login_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:padding="@dimen/base_padding"
+            android:text="@string/fr_login_forget_passwd"
+            android:textColor="@color/green" />
+    </RelativeLayout>
+
+</com.jk.earn.scrollview.widget.StretchScrollView>

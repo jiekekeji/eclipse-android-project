@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.wh.sdk.MainActivity" >
+
+    <com.jk.earn.view.NoSrocGridView
+        android:id="@+id/view_phone_empty_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="#f4f4f4"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:paddingLeft="2dp"
+        android:verticalSpacing="8dp" >
+    </com.jk.earn.view.NoSrocGridView>
+
+</FrameLayout>

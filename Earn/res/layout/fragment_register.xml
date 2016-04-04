@@ -1,0 +1,80 @@
+<com.jk.earn.scrollview.widget.StretchScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context="com.jk.earn.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/fr_register_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/fr_register_account_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_border"
+                android:hint="请输入用户名"
+                android:inputType="text"
+                android:maxLength="10"
+                android:padding="@dimen/base_padding"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/fr_register_pwd_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_top"
+                android:background="@drawable/shape_border"
+                android:hint="请输入邮箱,邮箱用于找回密码"
+                android:inputType="textEmailAddress"
+                android:maxLength="40"
+                android:padding="@dimen/base_padding"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/fr_register_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_top"
+                android:background="@drawable/shape_border"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:padding="@dimen/base_padding"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/fr_register_pwd_confire_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_margin_top"
+                android:background="@drawable/shape_border"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:padding="@dimen/base_padding"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/fr_register_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/shape_border"
+                android:padding="@dimen/base_padding"
+                android:text="注册" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.jk.earn.scrollview.widget.StretchScrollView>

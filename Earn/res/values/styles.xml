@@ -1,0 +1,43 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- activity切换的动画 -->
+    <style name="base_style" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:textColor">@color/back</item>
+    </style>
+
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/ac_in_from_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/ac_out_from_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/ac_in_from_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/ac_out_from_left</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <!-- progress_dialog -->
+    <style name="theme_progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/back</item>
+    </style>
+    
+     <style name="YoumiStyle"  parent="@android:style/Theme.Light.NoTitleBar">
+         <item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:textColor">@color/back</item>
+    </style>
+
+</resources>

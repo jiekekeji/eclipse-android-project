@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray">#E0E0E0</color>
+    <color name="light_gray">#FCFCFC</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#FF9800</color>
+    <color name="orange800">#EF6C00</color>
+    <color name="back">#272727</color>
+    <color name="blue">#3fa9f5</color>
+    <color name="background">#f4f4f4</color>
+    <color name="green">#02C874</color>
+    <color name="title_color">#333333</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="tab_text_color_sel">#f4c600</color>
+
+</resources>

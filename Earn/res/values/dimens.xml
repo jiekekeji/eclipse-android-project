@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- tab  widget -->
+    <dimen name="tab_widget_padding_bottom">10dp</dimen>
+    <dimen name="tab_widget_padding_top">5dp</dimen>
+
+    <!-- text padding -->
+    <dimen name="dialog_single_text_padding">18dp</dimen>
+    <dimen name="base_padding">8dp</dimen>
+    <dimen name="base_padding_top">8dp</dimen>
+    <dimen name="base_padding_bottom">8dp</dimen>
+    <dimen name="base_padding_right">8dp</dimen>
+    <dimen name="base_padding_left">8dp</dimen>
+    <dimen name="text_view_padding">16dp</dimen>
+    <dimen name="fr_phone_phone_num_et_padding">12dp</dimen>
+    <!-- margin -->
+    <dimen name="base_margin">8dp</dimen>
+    <dimen name="base_margin_top">8dp</dimen>
+    <dimen name="base_margin_bottom">8dp</dimen>
+    <dimen name="base_margin_right">8dp</dimen>
+    <dimen name="base_margin_left">8dp</dimen>
+
+    <!-- title_height -->
+    <dimen name="title_view_height">48dp</dimen>
+
+    <!-- text size -->
+    <dimen name="base_text_size">18sp</dimen>
+
+    <!-- fr_user -->
+    <dimen name="fr_user_header_img">360dp</dimen>
+    <dimen name="fr_user_header_img_margin_top">-100dp</dimen>
+    <dimen name="pullscrollview_margin_top">30dp</dimen>
+    <dimen name="user_header_size">50dp</dimen>
+    <dimen name="user_header_margin_left">25dp</dimen>
+    <dimen name="img_margin">10dp</dimen>
+    <dimen name="fr_user_headerHeight">300dp</dimen>
+    <dimen name="fr_user_headerVisibleHeight">160dp</dimen>
+
+    <!-- fr_wz -->
+    <dimen name="fr_wz_margin_top">10dp</dimen>
+    <dimen name="fr_wz_margin_bottom">10dp</dimen>
+
+    <!-- myprogressdialog -->
+    <dimen name="my_progress_dialog_height">16dp</dimen>
+    <dimen name="my_progress_dialog_width">16dp</dimen>
+
+    <!-- pull_torefresh_lv -->
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_height">90dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+    
+    <!-- ad margin -->
+    <dimen name="ad_margin_top">15dp</dimen>
+    <dimen name="ad_margin_bottom">15dp</dimen>
+     <dimen name="ad_padding">35dp</dimen>
+    
+
+</resources>

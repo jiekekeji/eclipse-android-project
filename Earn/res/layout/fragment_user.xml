@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_view_fr_wz_in"
+        layout="@layout/title_view_fr_user" />
+
+    <com.jk.earn.scrollview.widget.StretchScrollView
+        android:id="@+id/fr_wz_stretchscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_view_fr_wz_in"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/orange" >
+
+                <ImageView
+                    android:id="@+id/fr_user_header_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:src="@drawable/icon_user_header" />
+
+                <TextView
+                    android:id="@+id/fr_user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/fr_user_header_img"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_header_size"
+                android:layout_marginTop="@dimen/img_margin"
+                android:background="@drawable/shape_border" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="积分总额:" />
+
+                <TextView
+                    android:id="@+id/fr_user_totle_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_header_size"
+                android:background="@drawable/shape_border" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="注册邮箱:" />
+
+                <TextView
+                    android:id="@+id/fr_user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/img_margin" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fr_user_point_rechange_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_header_size"
+                android:layout_marginTop="@dimen/base_margin_top"
+                android:background="@drawable/shape_border" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/img_margin"
+                    android:text="积分兑换记录" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/img_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fr_user_point_recoder_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_header_size"
+                android:background="@drawable/shape_border" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/img_margin"
+                    android:text="积分获得记录" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/img_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fr_user_modify_pwd_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_header_size"
+                android:layout_marginTop="@dimen/base_margin_top"
+                android:background="@drawable/shape_border" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/img_margin"
+                    android:text="修改密码" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/img_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fr_user_login_now_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_header_size"
+                android:background="@drawable/shape_border"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/fr_user_login_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/img_margin"
+                    android:text="立即登录" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/img_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fr_user_help_center_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_header_size"
+                android:layout_marginTop="@dimen/base_margin_top"
+                android:background="@drawable/shape_border" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/img_margin"
+                    android:text="帮助中心" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/img_margin"
+                    android:background="@drawable/icon_help_center_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fr_user_point_helper_qq"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_header_size"
+                android:layout_marginBottom="@dimen/img_margin"
+                android:background="@drawable/shape_border" >
+
+                <ImageView
+                    android:id="@+id/fr_user_center_qq_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_margin"
+                    android:background="@drawable/icon_helper_center_qq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/img_margin"
+                    android:layout_toRightOf="@id/fr_user_center_qq_iv"
+                    android:text="联系QQ客服" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/img_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.jk.earn.scrollview.widget.StretchScrollView>
+
+</RelativeLayout>

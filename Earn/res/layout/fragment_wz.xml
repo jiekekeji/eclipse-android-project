@@ -1,0 +1,326 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.jk.earn.MainActivity" >
+
+    <include
+        android:id="@+id/title_view_fr_wz_in"
+        layout="@layout/title_view_fr_wz" />
+
+    <com.jk.earn.scrollview.widget.StretchScrollView
+        android:id="@+id/fr_wz_stretchscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_view_fr_wz_in"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/ad_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/youmi_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fr_wz_margin_top"
+                android:background="@drawable/shape_border"
+                android:onClick="openYoumiMain" >
+
+                <ImageView
+                    android:id="@+id/youmi_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/ad_margin_bottom"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_marginTop="@dimen/ad_margin_top"
+                    android:background="@drawable/app_logo"
+                    android:padding="@dimen/ad_padding" />
+
+                <TextView
+                    android:id="@+id/youmi_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_toRightOf="@+id/youmi_logo"
+                    android:text="有米任务"
+                    android:textSize="@dimen/base_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/base_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/beiduo_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fr_wz_margin_top"
+                android:background="@drawable/shape_border" >
+
+                <ImageView
+                    android:id="@+id/beiduo_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/ad_margin_bottom"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_marginTop="@dimen/ad_margin_top"
+                    android:background="@drawable/app_logo"
+                    android:padding="@dimen/ad_padding" />
+
+                <TextView
+                    android:id="@+id/beiduo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_toRightOf="@+id/beiduo_logo"
+                    android:text="贝多任务"
+                    android:textSize="@dimen/base_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/base_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/diancai_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fr_wz_margin_top"
+                android:background="@drawable/shape_border" >
+
+                <ImageView
+                    android:id="@+id/diancai_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/ad_margin_bottom"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_marginTop="@dimen/ad_margin_top"
+                    android:background="@drawable/app_logo"
+                    android:padding="@dimen/ad_padding" />
+
+                <TextView
+                    android:id="@+id/diancai_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_toRightOf="@+id/diancai_logo"
+                    android:text="点财任务"
+                    android:textSize="@dimen/base_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/base_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+            <!--
+            <RelativeLayout
+                android:id="@+id/qidian_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fr_wz_margin_top"
+                android:background="@drawable/shape_border" >
+
+                <ImageView
+                    android:id="@+id/qidian_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/ad_margin_bottom"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_marginTop="@dimen/ad_margin_top"
+                    android:background="@drawable/app_logo"
+                    android:padding="@dimen/ad_padding" />
+
+                <TextView
+                    android:id="@+id/qidian_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_toRightOf="@+id/qidian_logo"
+                    android:text="麒点任务"
+                    android:textSize="@dimen/base_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/base_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/yinggao_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fr_wz_margin_top"
+                android:background="@drawable/shape_border" >
+
+                <ImageView
+                    android:id="@+id/yinggao_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/ad_margin_bottom"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_marginTop="@dimen/ad_margin_top"
+                    android:background="@drawable/app_logo"
+                    android:padding="@dimen/ad_padding" />
+
+                <TextView
+                    android:id="@+id/yinggao_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_toRightOf="@+id/yinggao_logo"
+                    android:text="赢告任务"
+                    android:textSize="@dimen/base_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/base_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zhongyi_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fr_wz_margin_top"
+                android:background="@drawable/shape_border" >
+
+                <ImageView
+                    android:id="@+id/zhongyi_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/ad_margin_bottom"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_marginTop="@dimen/ad_margin_top"
+                    android:background="@drawable/app_logo"
+                    android:padding="@dimen/ad_padding" />
+
+                <TextView
+                    android:id="@+id/zhongyi_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_toRightOf="@id/zhongyi_logo"
+                    android:text="中亿任务"
+                    android:textSize="@dimen/base_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/base_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+            -->
+
+            <RelativeLayout
+                android:id="@+id/youmi_share_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_margin_bottom"
+                android:layout_marginTop="@dimen/fr_wz_margin_top"
+                android:background="@drawable/shape_border" >
+
+                <ImageView
+                    android:id="@+id/youmi_share_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/ad_margin_bottom"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_marginTop="@dimen/ad_margin_top"
+                    android:background="@drawable/app_logo"
+                    android:padding="@dimen/ad_padding" />
+
+                <TextView
+                    android:id="@+id/youmi_share_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_toRightOf="@id/youmi_share_logo"
+                    android:text="分享任务"
+                    android:textSize="@dimen/base_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/base_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/youmi_vidio_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fr_wz_margin_top"
+                android:background="@drawable/shape_border" >
+
+                <ImageView
+                    android:id="@+id/youmi_vidio_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/ad_margin_bottom"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_marginTop="@dimen/ad_margin_top"
+                    android:background="@drawable/app_logo"
+                    android:padding="@dimen/ad_padding" />
+
+                <TextView
+                    android:id="@+id/youmi_vidio_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_margin_left"
+                    android:layout_toRightOf="@id/youmi_vidio_logo"
+                    android:text="视频任务"
+                    android:textSize="@dimen/base_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/base_margin"
+                    android:background="@drawable/icon_total_jt_you" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.jk.earn.scrollview.widget.StretchScrollView>
+
+</RelativeLayout>

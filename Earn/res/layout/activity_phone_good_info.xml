@@ -1,0 +1,175 @@
+<com.jk.earn.scrollview.widget.StretchScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:fillViewport="true"
+    tools:context="com.wh.traffic.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_view_ac_phone_good_info" />
+        <!-- 号码信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/base_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/base_padding"
+                android:text="手机号码" />
+
+            <TextView
+                android:id="@+id/ac_phone_info_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:gravity="center"
+                android:padding="@dimen/base_padding"
+                android:text="18898611864" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/base_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/base_padding"
+                android:text="号码信息" />
+
+            <TextView
+                android:id="@+id/ac_phone_info_eara"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:gravity="center"
+                android:padding="@dimen/base_padding"
+                android:text="广东深圳电信188卡" />
+        </LinearLayout>
+
+        <!-- 商品名称 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/base_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/base_padding"
+                android:text="商品名称" />
+
+            <TextView
+                android:id="@+id/ac_phone_info_good_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:gravity="center"
+                android:padding="@dimen/base_padding"
+                android:text="Q币" />
+        </LinearLayout>
+        <!-- 数量 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/base_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/base_padding"
+                android:text="商品单位" />
+
+            <TextView
+                android:id="@+id/ac_phone_info_good_unit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:gravity="center"
+                android:padding="@dimen/base_padding"
+                android:text="1个月" />
+        </LinearLayout>
+        <!-- 所需积分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/base_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/base_padding"
+                android:text="单位积分" />
+
+            <TextView
+                android:id="@+id/ac_phone_info_good_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:gravity="center"
+                android:padding="@dimen/base_padding"
+                android:text="240" />
+        </LinearLayout>
+        <!-- 总积分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_border"
+            android:orientation="horizontal"
+            android:padding="@dimen/base_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/base_padding"
+                android:text="所需积分" />
+
+            <TextView
+                android:id="@+id/ac_phone_info_good_total_point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:gravity="center"
+                android:padding="@dimen/base_padding"
+                android:text="240" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ac_phone_info_buy_now_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/shape_border"
+            android:padding="@dimen/base_padding"
+            android:text="立即兑换" />
+    </LinearLayout>
+
+</com.jk.earn.scrollview.widget.StretchScrollView>

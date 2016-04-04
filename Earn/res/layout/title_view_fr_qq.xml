@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_view_height"
+    android:background="@color/orange"
+    tools:context="com.jk.earn.MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/title_fr_qq"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
