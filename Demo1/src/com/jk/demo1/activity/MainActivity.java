@@ -1,14 +1,15 @@
-package com.jk.demo1;
+package com.jk.demo1.activity;
 
-import cn.finalteam.okhttpfinal.BaseHttpRequestCallback;
-import cn.finalteam.okhttpfinal.HttpRequest;
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import cn.finalteam.okhttpfinal.BaseHttpRequestCallback;
+import cn.finalteam.okhttpfinal.HttpRequest;
 
-public class MainActivity extends Activity {
+import com.jk.demo1.R;
+
+public class MainActivity extends BaseActivity {
 
 	private static String TAG = MainActivity.class.getSimpleName();
 
