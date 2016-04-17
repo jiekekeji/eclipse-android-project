@@ -35,7 +35,6 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 		super.onCreate(arg0);
 		setContentView(R.layout.activity_one);
 		initView();
-		requestData();
 	}
 
 	private void initView() {
@@ -64,7 +63,7 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 
 	@Override
 	public void onPullUpToRefresh(PullToRefreshBase refreshView) {
-
+		requestData();
 	};
 
 	@Override
@@ -91,6 +90,7 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 		@Override
 		protected void onSuccess(TngouList bean) {
 			super.onSuccess(bean);
+			listview.onRefreshComplete();
 			Log.i(TAG, "t=" + bean.toString());
 		}
 
@@ -103,6 +103,7 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 		@Override
 		public void onFailure(int errorCode, String msg) {
 			super.onFailure(errorCode, msg);
+			listview.onRefreshComplete();
 			Log.i(TAG, "onFailure");
 		}
 	};
