@@ -4,18 +4,19 @@ import java.util.List;
 
 public class TngouList extends BaseBean {
 
-	private List<Tngou> tngous;
+	private List<Tngou> tngou;
 
-	public List<Tngou> getTngous() {
-		return tngous;
+	public List<Tngou> getTngou() {
+		return tngou;
 	}
 
-	public void setTngous(List<Tngou> tngous) {
-		this.tngous = tngous;
+	public void setTngou(List<Tngou> tngou) {
+		this.tngou = tngou;
 	}
 
 	@Override
 	public String toString() {
-		return "TngouList [tngous=" + tngous + "]";
+		return "TngouList [tngou=" + tngou + "]";
 	}
+
 }

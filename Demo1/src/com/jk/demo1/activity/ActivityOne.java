@@ -3,6 +3,7 @@ package com.jk.demo1.activity;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.R.raw;
 import android.os.Bundle;
 import android.util.Log;
 import cn.finalteam.okhttpfinal.BaseHttpRequestCallback;
@@ -77,8 +78,8 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 	 */
 	private void requestData() {
 		RequestParams params = new RequestParams();
-		params.addFormDataPart("page", String.valueOf(page));
-		params.addFormDataPart("rows", String.valueOf(rows));
+		params.addFormDataPart("page", page);
+		params.addFormDataPart("rows", rows);
 		// params.addFormDataPart("id", "");
 		HttpRequest.post(URLApi.SERVER + URLApi.IMG_LIST, params, requestDataCallback);
 	}
