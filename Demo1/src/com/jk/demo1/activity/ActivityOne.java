@@ -58,7 +58,7 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 	@Override
 	public void onPullDownToRefresh(PullToRefreshBase refreshView) {
 		// 下拉刷新
-		page = 0;
+		page = 1;
 		requestData();
 	}
 
@@ -93,6 +93,10 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 			super.onSuccess(bean);
 			listview.onRefreshComplete();
 			Log.i(TAG, "t=" + bean.toString());
+			tngous.clear();
+			tngous.addAll(bean.getTngou());
+			mAdapter.notifyDataSetChanged();
+			
 		}
 
 		@Override
