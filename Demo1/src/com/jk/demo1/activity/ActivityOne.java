@@ -5,6 +5,7 @@ import java.util.List;
 
 import android.R.raw;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView.AdapterDataObserver;
 import android.util.Log;
 import cn.finalteam.okhttpfinal.BaseHttpRequestCallback;
 import cn.finalteam.okhttpfinal.HttpRequest;
@@ -29,7 +30,9 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 	private List<Tngou> tngous;
 
 	private int page = 1;// 请求页码
-	private int rows = 20;// 每页返回的条数
+	private int rows = 5;// 每页返回的条数
+
+	private int loadStatus = 0;// 数据加载的状态,0下拉刷新，1加载更多
 
 	@Override
 	protected void onCreate(Bundle arg0) {
@@ -43,7 +46,6 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 
 		tngous = new ArrayList<Tngou>();
 		mAdapter = new TngouListAdapter(this, tngous, R.layout.adapter_tngou);
-
 		listview.setAdapter(mAdapter);
 		// 下拉刷新监听
 		listview.setOnRefreshListener(this);
@@ -53,17 +55,26 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 		listview.setScrollingWhileRefreshingEnabled(true);
 		// 设置刷新的模式
 		listview.setMode(Mode.BOTH);
+
 	}
 
 	@Override
 	public void onPullDownToRefresh(PullToRefreshBase refreshView) {
 		// 下拉刷新
+		// if (listview.isRefreshing()) {
+		// return;
+		// }
+		loadStatus = 0;
 		page = 1;
 		requestData();
 	}
 
 	@Override
 	public void onPullUpToRefresh(PullToRefreshBase refreshView) {
+		// if (listview.isRefreshing()) {
+		// return;
+		// }
+		loadStatus = 1;
 		requestData();
 	};
 
@@ -93,10 +104,17 @@ public class ActivityOne extends BaseActivity implements OnRefreshListener2, OnL
 			super.onSuccess(bean);
 			listview.onRefreshComplete();
 			Log.i(TAG, "t=" + bean.toString());
-			tngous.clear();
-			tngous.addAll(bean.getTngou());
-			mAdapter.notifyDataSetChanged();
-			
+			switch (loadStatus) {
+			case 0:// 刷新
+				mAdapter.clear();
+				mAdapter.addAll(bean.getTngou());
+				page++;
+				break;
+			case 1:// 加载更多
+				mAdapter.addAll(bean.getTngou());
+				page++;
+				break;
+			}
 		}
 
 		@Override
